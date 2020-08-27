@@ -87,7 +87,7 @@ app.get("/login", function (req, res) {
 });
 
 app.get("/register", function (req, res) {
-  res.render("register");
+  res.render("register", { err: 0 });
 });
 
 app.get("/secrets", function (req, res) {
